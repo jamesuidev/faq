@@ -1,0 +1,39 @@
+<?php 
+$blockName = $block -> getLayout()->createBlock('Emvigo\Faqn\Block\FaqList');
+$faqs = $blockName->getFaqs();
+?>
+
+<table>
+    <tr>
+        
+        <th>
+            <?= __("Name")?>
+        </th>
+        <th>
+            <?= __("Question")?>
+        </th>
+        <th>
+            <?= __("Answer")?>
+        </th>
+    </tr>
+    <?php
+    // $forms = $block->getForms();
+
+    foreach ( $faqs as $faq) {?>
+    <tr>
+        
+        <td>
+            <?= $faq->getName()?>
+        </td>
+  
+        <td>
+            <?= $faq->getQuestion() ?>
+        </td>
+            </tr> 
+            <tr>
+        <td>
+            <?= $faq->getAnswer() ?>
+        </td>
+    </tr>
+    <?php } ?>
+</table>

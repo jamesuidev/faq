@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <!-- <add id="Emvigo_TestForm::form" translate="title" title="Testimonial" module="Emvigo_TestForm" sortOrder="10" 
+        resource="Emvigo_TestForm::form"/> -->
+        
+        <add id="Magento_Backend::content_submenu" translate="title" title="Faqs" module="Emvigo_Faqn" sortOrder="10" 
+        resource="Magento_Backend::content" parent="Magento_Backend::content" action="faq/manage/index"/>
+    </menu>
+</config>

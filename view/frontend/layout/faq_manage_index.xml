@@ -1,0 +1,14 @@
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+             <body>
+
+            <referenceContainer name="content">
+                <block class="Emvigo\Faqn\Block\FaqList" name="faq_manage_index" template="Emvigo_Faqn::list.phtml" />
+                <block class="Magento\Framework\View\Element\Html\Link" name="form-header-menu">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Don't see you what you are looking for?</argument>
+                    <argument name="path" xsi:type="string">faq/manage/add</argument>
+                </arguments>
+                 </block>
+            </referenceContainer>    
+            </body>
+</layout>
